@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikart - Enlaces Oficiales | Arte Personalizado Único</title>
+    <meta name="description" content="Todos los enlaces oficiales de Fikart - Arte personalizado, cuadros únicos y regalos especiales. Síguenos en todas nuestras plataformas.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FDF9F3 0%, #F5E1ED 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-section {
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
+            }
+            to {
+                filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
+            }
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #E8B4CB, #D4AF37);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            border: 4px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #D291B0;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            color: #8B6F47;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            padding: 16px 25px;
+            text-decoration: none;
+            color: #8B6F47;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .link-item:hover::before {
+            left: 100%;
+        }
+
+        .link-item:hover {
+            transform: translateY(-3px) scale(1.02);
+            border-color: #D4AF37;
+            background: rgba(232, 180, 203, 0.1);
+            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+            color: #D291B0;
+        }
+
+        .link-item:active {
+            transform: translateY(-1px) scale(1.01);
+        }
+
+        .link-web {
+            background: linear-gradient(135deg, rgba(232, 180, 203, 0.2), rgba(212, 175, 55, 0.1));
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .link-instagram {
+            background: linear-gradient(135deg, rgba(245, 225, 237, 0.3), rgba(232, 180, 203, 0.2));
+        }
+
+        .link-youtube {
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(232, 180, 203, 0.2));
+        }
+
+        .link-tiktok {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(245, 225, 237, 0.2));
+        }
+
+        .link-whatsapp {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.1), rgba(245, 225, 237, 0.2));
+        }
+
+        .link-email {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(245, 225, 237, 0.2));
+        }
+
+        .email-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .footer p {
+            color: #D291B0;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #E8B4CB, #D4AF37);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px) rotate(10deg);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .profile-name {
+                font-size: 24px;
+            }
+            
+            .link-item {
+                padding: 14px 20px;
+                font-size: 14px;
+            }
+
+            .links-container {
+                gap: 10px;
+            }
+        }
+
+        .magical-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: linear-gradient(45deg, #D4AF37, #E8B4CB);
+            border-radius: 50%;
+            animation: float 6s infinite linear;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-10px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="magical-particles">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 0.5s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 2.5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 3.5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 4s;"></div>
+    </div>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image">
+                ✨
+            </div>
+            <div class="profile-name">FIKART</div>
+            <div class="profile-bio">🎨 Arte Personalizado Único<br>✨ Donde nacen las ideas mágicas</div>
+        </div>
+
+        <div class="links-container">
+            <a href="https://www.fikart.es" class="link-item link-web" target="_blank">
+                🌐 Visita nuestra Web Oficial
+            </a>
+            
+            <a href="https://www.instagram.com/custom_fikart" class="link-item link-instagram" target="_blank">
+                📱 Instagram @custom_fikart
+            </a>
+            
+            <a href="https://www.youtube.com/@CustomFikart" class="link-item link-youtube" target="_blank">
+                📺 YouTube @CustomFikart
+            </a>
+
+            <a href="https://www.tiktok.com/@lily.fikart" class="link-item link-tiktok" target="_blank">
+                🎵 TikTok @lily.fikart
+            </a>
+            
+            <a href="https://wa.me/34646926317?text=Hola%20Fikart%21%20Me%20interesa%20el%20arte%20personalizado" class="link-item link-whatsapp" target="_blank">
+                💬 WhatsApp Business
+            </a>
+            
+            <div class="email-group">
+                <a href="mailto:info@fikart.es" class="link-item link-email">
+                    ✉️ Email Comercial - info@fikart.es
+                </a>
+                
+                <a href="mailto:holafikart@gmail.com" class="link-item link-email">
+                    📧 Email Consultas - holafikart@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✨ Transforma tus momentos especiales en arte único ✨</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/custom_fikart" class="social-icon" target="_blank">📱</a>
+                <a href="https://www.youtube.com/@CustomFikart" class="social-icon" target="_blank">📺</a>
+                <a href="https://www.tiktok.com/@lily.fikart" class="social-icon" target="_blank">🎵</a>
+                <a href="https://wa.me/34646926317" class="social-icon" target="_blank">💬</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Efecto de partículas mágicas adicional
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.link-item');
+            
+            links.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.03)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Crear más partículas dinámicamente
+            const particlesContainer = document.querySelector('.magical-particles');
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>
